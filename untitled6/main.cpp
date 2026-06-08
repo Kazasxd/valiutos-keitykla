@@ -24,7 +24,6 @@ const double INR_BENDAS = 104.6918;
 const double INR_PIRKTI = 101.3862;
 const double INR_PARDUOTI = 107.8546;
 
-// Funkcija valiutos pavadinimui gauti
 string getCurrencyName(int choice) {
     switch(choice) {
         case 1: return "EUR (Euras)";
@@ -35,7 +34,6 @@ string getCurrencyName(int choice) {
     }
 }
 
-// Funkcija valiutos kodui gauti
 string getCurrencyCode(int choice) {
     switch(choice) {
         case 1: return "EUR";
@@ -46,18 +44,17 @@ string getCurrencyCode(int choice) {
     }
 }
 
-// Funkcija kursui gauti
 double getRate(int currency, int operationType) {
     switch(currency) {
-        case 2: // GBP
+        case 2: 
             if(operationType == 1) return GBP_BENDAS;
             else if(operationType == 2) return GBP_PIRKTI;
             else return GBP_PARDUOTI;
-        case 3: // USD
+        case 3: 
             if(operationType == 1) return USD_BENDAS;
             else if(operationType == 2) return USD_PIRKTI;
             else return USD_PARDUOTI;
-        case 4: // INR
+        case 4: 
             if(operationType == 1) return INR_BENDAS;
             else if(operationType == 2) return INR_PIRKTI;
             else return INR_PARDUOTI;
@@ -65,7 +62,6 @@ double getRate(int currency, int operationType) {
     }
 }
 
-// TIK VIENA MAIN FUNKCIJA
 int main() {
     int pasirinkimas, valiuta;
     double kiekis, rezultatas;
