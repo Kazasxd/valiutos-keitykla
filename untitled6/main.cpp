@@ -1,9 +1,3 @@
-/*
-* Programa: Valiutos keitykla
- * Autorius: Dovydas Kazakevičius
- * Data: 2026-03-09
- * Aprašymas: Programa konvertuoja EUR į GBP, USD, INR
- */
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -11,7 +5,6 @@
 
 using namespace std;
 
-// Valiutų kursai
 const double GBP_BENDAS = 0.8729;
 const double GBP_PIRKTI = 0.8600;
 const double GBP_PARDUOTI = 0.9220;
